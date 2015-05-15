@@ -25,9 +25,8 @@ module.exports = function(server, options) {
       handler: function(request, reply) {
         var rguru = require(PATHS.lib + '/rguru');
         reply.view('index', {
-          title: 'rguru UI',
+          title: 'Lullabot Pace | Project listing from Resource Guru',
           projects: rguru.getProjects(),
-          someContent: 'This is templated content',
           appFile: (server.app.config.development) ? 'app.js' : 'app.min.js',
           api: api.info.uri
         });

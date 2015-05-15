@@ -3,9 +3,13 @@
     <title>{{title}}</title>
   </head>
   <body>
-    <h1>WINNING!</h1>
-    <h3>{{someContent}}</h3>
-    <h4>honk</h4>
+    <h1>Resource Guru Projects!</h1>
+    {{projects}}
+    <ul>
+      {{#each projects}}
+      <li>{{name}}</li>
+      {{/each}}
+    </ul>
     <div id='app'></div>
     <script type='text/javascript'>
       var API = '{{api}}';
