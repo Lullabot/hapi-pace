@@ -19,7 +19,8 @@
     "gulp-browserify": "^0.5.1",
     "hapi": "^8.2.0",
     "joi": "^5.0.2",
-    "lout": "^6.1.0"
+    "lout": "^6.1.0",
+    "freckle": "0.0.1"
   },
   "devDependencies": {
     "browserify": "^9.0.3",

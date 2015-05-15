@@ -1,0 +1,7 @@
+{
+  "name": "pace",
+  "version": "0.0.1",
+  "dependencies": {
+    "handlebars": "^3"
+  }
+}

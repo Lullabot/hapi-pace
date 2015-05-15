@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>{{title}}</title>
+  </head>
+  <body>
+    <h1>Projects</h1>
+    <ul>
+    {{#each projects}}
+      <li>
+        <h2>{{name}}</h2>
+        <h3>{{salesForceId}}</h3>
+      </li>
+    {{/each}}
+    </ul>
+    <div id='app'></div>
+    <script type='text/javascript'>
+      var API = '{{api}}';
+    </script>
+    <script src='/assets/jquery/dist/jquery.min.js'></script>
+    <script src='/assets/react/react.js'></script>
+    <script src='/pace/assets/{{appFile}}'></script>
+  </body>
+</html>

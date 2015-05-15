@@ -88,7 +88,8 @@ gulp.task('nodemon', function () {
       PATHS.plugins + '/index.js',
       PATHS.dist + '/*.html',
       'plugins/*/routes/*.js',
-      'plugins/*/controllers/*.js'
+      'plugins/*/controllers/*.js',
+      'lib/*.js'
     ]
   });
 });
