@@ -2,7 +2,8 @@
   "name": "pace",
   "version": "0.0.0",
   "dependencies": {
-    "react": "*"
+    "react": "*",
+    "jquery": "*"
   }
 }
 
