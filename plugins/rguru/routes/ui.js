@@ -8,6 +8,9 @@ var PATHS = {
 module.exports = function(server, options) {
   var ui = server.select('ui'),
     api = server.select('api');
+        var rguru = require(PATHS.lib + '/rguru');
+        var projects = rguru.getProjects()
+        console.log(projects);
 
   ui.views({
     engines: {
@@ -23,10 +26,9 @@ module.exports = function(server, options) {
     config: {
       description: 'Serve the rguru index.html',
       handler: function(request, reply) {
-        var rguru = require(PATHS.lib + '/rguru');
         reply.view('index', {
           title: 'Lullabot Pace | Project listing from Resource Guru',
-          projects: rguru.getProjects(),
+          projects: projects,
           appFile: (server.app.config.development) ? 'app.js' : 'app.min.js',
           api: api.info.uri
         });
